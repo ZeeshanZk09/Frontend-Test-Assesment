@@ -1,6 +1,6 @@
 import Ad from './component/Ad';
 import Hero from './component/Hero';
-import Layout from './component/layout/layout';
+import Layout from './component/layout/Layout';
 import Reviews from './component/Reviews';
 import WhyLove from './component/WhyLove';
 import Work from './component/Work';
