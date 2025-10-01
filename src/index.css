@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+html,
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  font-weight: lighter;
+}
+
+.hero-bg {
+  background: url('./assets/bg.png');
+  background-size: cover;
+  background-position: -10px;
+  background-repeat: no-repeat;
+  border-radius: 0 0 20px 20px;
+  transform: translate(0, -90px);
+  overflow: hidden;
+}
+
+.h2font {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4rem;
+}
