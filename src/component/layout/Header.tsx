@@ -27,7 +27,10 @@ export default function Header(): JSX.Element {
           </div>
 
           {/* Desktop nav */}
-          <nav aria-label='Primary' className='hidden md:flex md:items-center md:space-x-6'>
+          <nav
+            aria-label='Primary'
+            className='hidden px-8 py-4 md:flex md:items-center rounded-full bg-[#ffffff10] backdrop-blur-sm border border-[#ffffff2c] md:space-x-6'
+          >
             <ul className='flex items-center space-x-8 text-sm text-gray-200'>
               {navItems.map((item) => (
                 <li key={item.id}>
