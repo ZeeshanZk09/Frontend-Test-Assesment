@@ -20,7 +20,7 @@ export default function Work() {
     },
   ];
   return (
-    <section className='w-screen bg-[#060606] text-gray-200 py-16'>
+    <section className='text-gray-200 py-16'>
       <div className='max-w-7xl mx-auto px-6'>
         <header className='text-center mb-12'>
           <h2 className='text-3xl md:text-4xl lg:text-5xl font-semibold text-white'>
@@ -43,12 +43,12 @@ export default function Work() {
                 aria-labelledby={`step-${id}`}
               >
                 {/* Icon with glow/rings */}
-                <div className='icon-glow mb-6'>
+                <div className='icon-glow '>
                   <img src={url} alt={title} className='w-48 h-48' />
                 </div>
 
                 {/* The card text sits slightly below the dividing line */}
-                <div className='mt-2 max-w-xs'>
+                <div className=' max-w-xs'>
                   <h4 id={`step-${id}`} className='text-white text-lg font-medium mb-1'>
                     {title}
                   </h4>

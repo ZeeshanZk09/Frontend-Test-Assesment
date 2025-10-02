@@ -5,7 +5,7 @@ export default function Reviews() {
     <div className='px-10 lg:px-20 space-y-4'>
       <h2 className='text-5xl'>Real Experience from Real People</h2>
       <p className='text-md'>Hear from travelers and trainers using Gymscanner around the world</p>
-      <div className='flex flex-col lg:flex-row gap-8'>
+      <div className='flex flex-col xl:flex-row gap-8 items-center'>
         <Card
           name='Samantha K.'
           img='/dp.png'

@@ -34,11 +34,11 @@ const features: Feature[] = [
 
 export default function WhyLove() {
   return (
-    <section className='px-8 w-screen bg-[#060606] text-gray-200 py-16'>
-      <div className='w-screen flex flex-col xl:flex-row items-center justify-start lg:justify-between'>
+    <section className='px-8 py-16'>
+      <div className=' text-gray-200 rounded-2xl flex flex-col lg:flex-row  items-center justify-center lg:justify-between'>
         {/* LEFT: Image card with decorative ribbons & glow */}
-        <div className='mb-6 w-full lg:w-1/2 relative flex justify-start lg:justify-center'>
-          <div className='relative rounded-2xl overflow-hidden shadow-2xl w-full max-w-sm lg:max-w-xl'>
+        <div className='mb-6 w-full lg:w-1/2 relative flex justify-center lg:justify-center'>
+          <div className='relative rounded-2xl overflow-hidden shadow-2xl w-full max-w-sm xl:max-w-xl'>
             {/* soft radial glow behind image */}
             <div className='absolute inset-0 pointer-events-none flex items-center justify-center'>
               <div className='w-72 h-72 rounded-full bg-yellow-400/10 blur-[54px] mix-blend-screen' />
@@ -58,11 +58,11 @@ export default function WhyLove() {
         </div>
 
         {/* RIGHT: Title + feature list */}
-        <div className='text-left w-full lg:w-1/2'>
-          <h3 className='max-w-[18rem] text-3xl font-semibold text-white mb-3'>
+        <div className='max-w-[30rem] text-left  w-full lg:w-1/2'>
+          <h3 className='max-w-[18rem] text-lg lg:text-2xl xl:text-3xl font-semibold text-white mb-3'>
             Why People Love Gymscanner
           </h3>
-          <p className='text-gray-400 mb-8 max-w-[25rem]'>
+          <p className='text-gray-400 text-sm xl:text-base mb-8 max-w-[25rem]'>
             A smarter way to stay fit anywhere in the world
           </p>
 
@@ -70,7 +70,7 @@ export default function WhyLove() {
             {features.map(({ id, url, title, message }) => (
               <li
                 key={id}
-                className='flex items-start gap-4 p-4 rounded-xl bg-transparent hover:bg-white/2 transition transform hover:-translate-y-0.5 border border-transparent hover:border-gray-800'
+                className='max-w-[30rem] flex items-start gap-4 p-4 rounded-xl bg-transparent hover:bg-white/2 transition transform hover:-translate-y-0.5 border border-transparent hover:border-gray-800'
                 aria-labelledby={`feature-${id}`}
               >
                 {/* icon badge */}

@@ -12,7 +12,7 @@ export default function Header(): JSX.Element {
   ];
 
   return (
-    <header className='absolute w-screen z-50 bg-transparent'>
+    <header className='absolute w-full overflow-hidden z-50 bg-transparent'>
       <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6'>
         <div className='flex items-center justify-between '>
           {/* Logo / Brand */}
@@ -29,7 +29,7 @@ export default function Header(): JSX.Element {
           {/* Desktop nav */}
           <nav
             aria-label='Primary'
-            className='hidden px-8 py-4 md:flex md:items-center rounded-full bg-[#ffffff10] backdrop-blur-sm border border-[#ffffff2c] md:space-x-6'
+            className='hidden px-8 py-2 md:flex md:items-center rounded-full bg-[#ffffff10] backdrop-blur-sm border border-[#ffffff2c] md:space-x-6'
           >
             <ul className='flex items-center space-x-8 text-sm text-gray-200'>
               {navItems.map((item) => (
@@ -64,13 +64,6 @@ export default function Header(): JSX.Element {
 
           {/* Mobile controls */}
           <div className='flex md:hidden items-center'>
-            {/* Mobile CTA (optional) */}
-            <a
-              href='/signup'
-              className='mr-3 inline-flex items-center px-3 py-1.5 rounded-full bg-yellow-300 text-black text-sm font-medium shadow-sm'
-            >
-              Sign Up
-            </a>
 
             {/* Hamburger button */}
             <button

@@ -47,15 +47,15 @@ export default function Hero() {
               className='indent-2 flex flex-col justify-center items-start w-full sm:w-auto'
               key={Math.random() * 10000}
             >
-              <h3 className='text-black text-sm sm:text-base'>{label}</h3>
-              <p className='text-gray-500 text-xs sm:text-sm'>{message}</p>
+              <h3 className='text-black font-mono text-base'>{label}</h3>
+              <p className='text-gray-500 text-sm font-light'>{message}</p>
             </div>
           ))}
           {/* Search Button */}
           <button
             type='button'
             title='search'
-            className='flex items-center justify-center px-6 py-3 rounded-2xl lg:rounded-full text-black bg-yellow-400 shadow-md w-full sm:w-auto'
+            className='font-mono flex items-center justify-center px-6 py-3 rounded-2xl lg:rounded-full text-black bg-yellow-400 shadow-md w-full sm:w-auto'
           >
             Search
           </button>
